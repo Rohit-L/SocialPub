@@ -5,6 +5,7 @@ if (isset($_SESSION['user'])) {
 	header("Location: members.php?view=$user");
 }
 require_once 'header.php';
+require_once 'functions.php';
 
 $error = $user = $pass = "";
 if (isset($_POST['user'])) {
